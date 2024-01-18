@@ -1,6 +1,7 @@
 /* ====================================
 // css variables
 // ==================================== */
+@import "bootstrap/scss/bootstrap-grid";
 
 :root {
 }
@@ -37,6 +38,50 @@ video {
   max-inline-size: 100%;
   block-size: auto;
   vertical-align: middle;
+}
+
+.header-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 76px;
+  font-weight: 800;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  padding-top: 0px;
+  margin-bottom: 80px;
+  img {
+    margin-top: 22px;
+  }
+}
+
+.small-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  padding-bottom: 80px;
+}
+
+.project-description {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  font-weight: 400;
+  color: #757575;
+}
+
+.project-img {
+  padding-top: 1px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-bottom: 20px;
 }
 
 /* ====================================
