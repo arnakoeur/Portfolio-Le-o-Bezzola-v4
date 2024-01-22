@@ -27,6 +27,7 @@ body {
 
   font-size: 1rem;
   line-height: 1.25;
+  overscroll-behavior: none;
 }
 
 a {
@@ -110,21 +111,14 @@ video {
 
 .project-page-video {
   margin-bottom: 5px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
-@media (min-width: 800px) {
-  .project-img {
-    padding-top: 1px;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
-  .project-page-img-wide {
-    padding-top: 1px;
-    aspect-ratio: 16/9;
-    object-fit: cover;
-    margin-bottom: 5px;
-  }
+.project-page-video-wide {
+  margin-bottom: 5px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 .skills {
@@ -221,14 +215,133 @@ video {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 9px;
   font-weight: 400;
-  color: #757575;
+  color: #919191;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .description-text {
   padding-bottom: 15px;
 }
 
+@media (min-width: 800px) {
+  .project-img {
+    padding-top: 1px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin-bottom: 30px;
+  }
+  .project-page-img-wide {
+    padding-top: 1px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin-bottom: 5px;
+  }
+  .project-page-video {
+    margin-bottom: 5px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+  .header-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 140px;
+    font-weight: 800;
+  }
+  .small-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+  }
+  .project-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #757575;
+  }
+  .description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-bottom: 170px;
+    font-size: 15px;
+  }
+  .header-container {
+    padding-top: 10px;
+    margin-bottom: 200px;
+  }
+  .header-title-small {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 7px;
+    img {
+      width: 20px;
+      padding: 0;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .footer-container {
+    background-color: black;
+    margin-top: 150px;
+  }
+  .burger-bar {
+    margin-top: 35px;
+  }
+  .inter-link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #919191;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+.inter-link {
+  transition: color 0.23s 0.2s ease-out;
+}
+
+.inter-link:hover {
+  color: black;
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding: 0px 35px 0px 35px;
+  }
+  .header-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 200px;
+    font-weight: 800;
+  }
+  .small-title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  .project-description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #757575;
+  }
+  .description {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    padding-bottom: 170px;
+    font-size: 18px;
+  }
+  .project-img {
+    padding-top: 1px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin-bottom: 40px;
+  }
+}
 /* ====================================
 // base rules
 // ==================================== */
